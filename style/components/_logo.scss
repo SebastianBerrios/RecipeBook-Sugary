@@ -1,0 +1,30 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  & img {
+    border-radius: 50%;
+    width: 50px;
+  }
+
+  & p {
+    display: none;
+
+    @include breakpoint(768px) {
+      display: block;
+      text-align: center;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: var(--color-black800);
+    }
+  }
+
+  &.logo-footer {
+    & p {
+      display: block;
+    }
+  }
+}

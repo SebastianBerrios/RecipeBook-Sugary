@@ -1,0 +1,47 @@
+.preparation {
+  margin: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  gap: 40px;
+
+  & .preparation-card {
+    padding: 30px;
+    width: 100%;
+    max-width: 920px;
+    border-radius: 33px;
+    background: var(--color-white200);
+  }
+
+  & .ingredients {
+    & h2 {
+      margin-bottom: 20px;
+    }
+
+    & li {
+      margin-left: 24px;
+      list-style: circle;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      color: var(--color-black800);
+    }
+  }
+
+  & .intructions {
+    & h2 {
+      margin-bottom: 20px;
+    }
+
+    & hr {
+      border: 0;
+      height: 25px;
+      background-repeat: no-repeat;
+      background-image: url(../../img/hr.png);
+      background-position: 50%;
+      margin: 15px 0;
+    }
+  }
+}

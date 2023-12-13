@@ -1,0 +1,14 @@
+@import "./style/base/mixins";
+@import "./style/base/universal";
+@import "./style/base/variables";
+
+@import "./style/components/button-show";
+@import "./style/components/logo";
+@import "./style/components/recipe-card";
+@import "./style/components/search-bar";
+
+@import "./style/sections/footer";
+@import "./style/sections/header";
+@import "./style/sections/hero";
+@import "./style/sections/preparation";
+@import "./style/sections/recipes";

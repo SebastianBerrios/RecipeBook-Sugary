@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recetario</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="yellow-line"></div>
+      <div class="menu">
+        <div class="logo">
+          <img src="./img/logo.webp" alt="logo" />
+          <p>Sugary</p>
+        </div>
+        <div class="search-bar">
+          <img src="./img/magnifying-glass.svg" alt="magnifying-glass" />
+          <input
+            type="search"
+            placeholder="Search your recipes..."
+            id="search-recipe"
+          />
+          <script src="./script/search-recipe.js"></script>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="black-background">
+          <img src="./img/hero.svg" alt="desserts" />
+          <h1>Recipe Book by Sugary</h1>
+        </div>
+      </section>
+      <section class="recipes">
+        <h2>Recipes</h2>
+        <div class="recipes-book">
+          <div class="recipe-card">
+            <img src="./img/brownie.webp" alt="brownie" />
+            <div class="description">
+              <h3>Brownie</h3>
+              <p>
+                El brownie es un postre denso y chocolatoso, con textura suave
+                en el centro y ligera capa crujiente.
+              </p>
+            </div>
+            <a href="./recipes/brownie.html" class="button-show">Show recipe</a>
+          </div>
+          <div class="recipe-card">
+            <img src="./img/alfajores.webp" alt="alfajores" />
+            <div class="description">
+              <h3>Alfajores</h3>
+              <p>
+                Los alfajores son dulces compuestos por dos galletas que
+                encierran un relleno de manjar blanco y están cubiertos con
+                azúcar glas.
+              </p>
+            </div>
+            <a href="./recipes/alfajores.html" class="button-show"
+              >Show recipe</a
+            >
+          </div>
+          <div class="recipe-card">
+            <img src="./img/donuts.webp" alt="mini-donuts" />
+            <div class="description">
+              <h3>Mini Donuts</h3>
+              <p>
+                Las mini donas son pequeños aros de masa horneada, recubiertos
+                con chocolate glaseado y grageas de colores.
+              </p>
+            </div>
+            <a href="./recipes/mini-donuts.html" class="button-show"
+              >Show recipe</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="logo logo-footer">
+        <img src="./img/logo.webp" alt="logo" />
+        <p>Sugary</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-white);
+}
+
+h2 {
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-black800);
+}
+
+h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-black800);
+}
+
+p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-black800);
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  --color-white: #ffffff;
+  --color-white200: #f5f2f2;
+  --color-black: #000000;
+  --color-black800: #2c2b2b;
+  --color-yellow300: #ffdb63;
+}
+
+.button-show {
+  display: inline-flex;
+  padding: 9px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--color-yellow300);
+  margin-left: 38px;
+  font-size: 20.714px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-black800);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo img {
+  border-radius: 50%;
+  width: 50px;
+}
+.logo p {
+  display: none;
+}
+@media (min-width: 768px) {
+  .logo p {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-black800);
+  }
+}
+.logo.logo-footer p {
+  display: block;
+}
+
+.recipe-card {
+  width: 350px;
+  border-radius: 33px;
+  background: var(--color-white200);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.recipe-card img {
+  width: 403px;
+  height: 212.04px;
+  border-radius: 33px 33px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recipe-card .description {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 38px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 225px;
+  height: 45px;
+  gap: 15px;
+  border-radius: 22.5px;
+  background: var(--color-white200);
+}
+.search-bar img {
+  margin-left: 10px;
+  width: 17px;
+  height: 17px;
+}
+.search-bar input {
+  width: 170px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: none;
+  background: var(--color-white200);
+}
+.search-bar input:focus {
+  outline: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background: var(--color-yellow300);
+}
+
+header .yellow-line {
+  width: 100%;
+  height: 30px;
+  background: var(--color-yellow300);
+}
+header a {
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-black800);
+}
+header .menu {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero {
+  width: 100%;
+  height: 362px;
+}
+.hero .black-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 362px;
+  background: #000;
+}
+.hero .black-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+}
+.hero .black-background h1 {
+  text-align: center;
+  z-index: 10;
+}
+
+.preparation {
+  margin: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 40px;
+}
+.preparation .preparation-card {
+  padding: 30px;
+  width: 100%;
+  max-width: 920px;
+  border-radius: 33px;
+  background: var(--color-white200);
+}
+.preparation .ingredients h2 {
+  margin-bottom: 20px;
+}
+.preparation .ingredients li {
+  margin-left: 24px;
+  list-style: circle;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--color-black800);
+}
+.preparation .intructions h2 {
+  margin-bottom: 20px;
+}
+.preparation .intructions hr {
+  border: 0;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-image: url(../../img/hr.png);
+  background-position: 50%;
+  margin: 15px 0;
+}
+
+.recipes {
+  margin: 80px 0;
+}
+.recipes h2 {
+  text-align: center;
+}
+.recipes .recipes-book {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 30px 0;
+}/*# sourceMappingURL=style.css.map */

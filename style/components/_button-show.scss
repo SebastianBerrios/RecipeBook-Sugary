@@ -1,0 +1,16 @@
+.button-show {
+  display: inline-flex;
+  padding: 9px 33px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 32px;
+  background: var(--color-yellow300);
+  margin-left: 38px;
+
+  font-size: 20.714px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--color-black800);
+}

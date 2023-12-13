@@ -1,0 +1,15 @@
+nav {
+  & ul {
+    display: flex;
+    gap: 25px;
+
+    & li {
+      text-align: center;
+      font-size: 26px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      color: var(--color-black800);
+    }
+  }
+}
