@@ -1,5 +1,10 @@
 .preparation {
-  margin: 50px;
+  margin: 50px 10px;
+
+  @include breakpoint(768px) {
+    margin: 50px;
+  }
+
   display: flex;
   flex-flow: column wrap;
   align-items: center;
