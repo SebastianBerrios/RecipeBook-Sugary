@@ -118,7 +118,7 @@ li {
      object-fit: cover;
 }
 .recipe-card .description {
-  height: 200px;
+  height: 230px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -207,11 +207,16 @@ header .menu {
 }
 
 .preparation {
-  margin: 50px;
+  margin: 50px 10px;
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   gap: 40px;
+}
+@media (min-width: 768px) {
+  .preparation {
+    margin: 50px;
+  }
 }
 .preparation .preparation-card {
   padding: 30px;
