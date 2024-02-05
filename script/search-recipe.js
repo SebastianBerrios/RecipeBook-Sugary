@@ -1,6 +1,19 @@
-const h3 = document.getElementById("search-recipe");
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("search-recipe");
 
-h3.addEventListener("keyup", (event) => {
-  const contentH3 = event.target.value;
-  console.log(contentH3);
+  searchInput.addEventListener("input", function () {
+    const searchTerm = searchInput.value.toLowerCase();
+    const recipeCards = document.querySelectorAll(".recipe-card");
+
+    recipeCards.forEach(function (card) {
+      const recipeName = card.querySelector("h3").textContent.toLowerCase();
+      const recipeNameStart = recipeName.startsWith(searchTerm);
+
+      if (recipeNameStart) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
 });
